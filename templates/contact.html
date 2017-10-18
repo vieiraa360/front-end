@@ -1,0 +1,57 @@
+    <!-- Page content -->
+
+    <div id="card7" class="row">
+        <div class="col-sm-5 my-5">
+          <div class="card">
+            <h4>Send me an email, whatever you're feeling:</h4>
+              <ul class="animated slideInUp">
+                <li>Depressed?</li>
+                  <img src="./images/depressed.jpg">
+              </ul>
+              
+              <ul class="animated slideInUp">
+                <li>Sad?</li>
+                  <img src="./images/sad.jpg">
+              </ul>
+
+              <ul class="animated slideInUp">
+                <li>Unsure?</li>
+                <img src="./images/unsure.jpg">
+              </ul>
+        </div>
+      </div>
+
+
+<div id="card6" class="col-xs-6 col-md-7 animated slideInUp">
+
+    <form name="contactForm" data-ng-submit="submitForm()" action="https://example.com/" method="POST" novalidate>
+      <label for="form name"><h2><span style="color: #29335C">Contact Me</span></h2></label>
+
+      <div class="form-group">
+      <input type="email" name="email" class="form-control" id="Email" ng-model="email" required placeholder="Email">
+      <p ng-show="contactForm.email.$pristine" class="help-block">Your email is required</p>
+      </div>
+
+
+      <div class="form-group">
+      <input type="text" name="name" class="form-control" ng-model="name" required id="InputText" placeholder="Name">
+      <p ng-show="contactForm.name.$pristine" class="help-block">Your name is required</p>
+      </div>
+
+      <div class="form-group">
+      <input type="subject" name="_subject" class="form-control" id="InputText" placeholder="Enter your subject">
+      </div>
+
+      <div class="form-group">
+      <textarea class="form-control" name="textarea" rows="7" placeholder="Type your message here!"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-large" onclick="alert('Your message has been sent. Many thanks!')" ng-disabled="contactForm.$invalid">Submit</button>
+      <input type="hidden" name="_next" value="https://vieiraa360.github.io/front-end-project/" />
+    </form>
+
+</div>
+
+    <div id="card7" class="col-md-12">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.895382919942!2d-1.9597878329906993!3d50.723820805372114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a6ca62277aef%3A0x6e12e9d8bf43e69d!2sJames+Steven+Practice!5e0!3m2!1sen!2suk!4v1507843013784" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>

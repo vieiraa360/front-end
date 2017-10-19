@@ -27,7 +27,8 @@ body {
 
 .business-header {
     height: 50vh;
-    min-height: 300px;
+    min-height: 200px;
+    padding-top: 30px;
     background: url('../images/banner.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -94,6 +95,6 @@ body {
 #title {
     text-align: center;
     color: white;
-    margin-top: -70px;
+    margin-top: -90px;
 }
 

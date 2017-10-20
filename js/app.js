@@ -23,4 +23,8 @@ angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/fees.html',
         controller: 'HomeController'
     })
+    .otherwise({
+        redirectTo: '/',
+        controller: 'HomeController'
+        })
 });

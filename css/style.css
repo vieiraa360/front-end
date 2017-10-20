@@ -98,3 +98,6 @@ body {
     margin-top: -90px;
 }
 
+footer img {
+  height: 50px !important;
+}

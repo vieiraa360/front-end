@@ -1,3 +1,26 @@
+    <!-- Modal -->
+
+    <div class="modal fade" id="mailSent" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title" id="ModalLongTitle">Your message has been sent!</h3>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>We will get back to you asap. Many thanks!</p>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript:window.location='https://vieiraa360.github.io/front-end/'">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
     <!-- Page content -->
 
     <div id="card7" class="row">
@@ -24,14 +47,13 @@
 
 <div id="card6" class="col-xs-6 col-md-7 animated slideInUp">
 
-    <form name="contactForm" data-ng-submit="submitForm()" action="https://example.com/" method="POST" novalidate>
+    <form name="contactForm" data-ng-submit="submitForm()" method="POST" novalidate">
       <label for="form name"><h2><span style="color: #29335C">Contact Me</span></h2></label>
 
       <div class="form-group">
-      <input type="email" name="email" class="form-control" id="Email" ng-model="email" required placeholder="Email">
+      <input type="email" name="email" class="form-control" ng-model="email.text" required placeholder="Email">
       <p ng-show="contactForm.email.$pristine" class="help-block">Your email is required</p>
       </div>
-
 
       <div class="form-group">
       <input type="text" name="name" class="form-control" ng-model="name" required id="InputText" placeholder="Name">
@@ -39,16 +61,22 @@
       </div>
 
       <div class="form-group">
-      <input type="subject" name="_subject" class="form-control" id="InputText" placeholder="Enter your subject">
+      <input type="subject" name="subject" class="form-control" ng-model="subject" required id="InputText" placeholder="Enter your subject">
+      <p ng-show="contactForm.subject.$pristine" class="help-block">Please enter the subject of your message</p>
       </div>
 
       <div class="form-group">
-      <textarea class="form-control" name="textarea" rows="7" placeholder="Type your message here!"></textarea>
+      <textarea type="textarea" class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
+      <p ng-show="contactForm.textarea.$pristine" class="help-block">Please type in your message</p>
       </div>
 
-      <button type="submit" class="btn btn-primary btn-large" onclick="alert('Your message has been sent. Many thanks!')" ng-disabled="contactForm.$invalid">Submit</button>
-      <input type="hidden" name="_next" value="." />
+      <button type="submit" class="btn btn-primary btn-large" ng-disabled="contactForm.$invalid" data-toggle="modal" data-target="#mailSent">Submit</button>
     </form>
+
+
+
+
+
 
 </div>
 

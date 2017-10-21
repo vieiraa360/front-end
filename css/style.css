@@ -102,3 +102,7 @@ body {
 footer img {
   height: 50px !important;
 }
+
+#footertext {
+  text-align: right;
+} 

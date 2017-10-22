@@ -23,20 +23,16 @@ angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/aboutxt.html',
         controller: 'HomeController'
     })
-    .when('/homext/#cs', {
-        templateUrl: 'templates/homext.html',
-        controller: 'HomeController'
-    })
     .when('/aboutxt/#tq', {
-        templateUrl: 'templates/aboutxt.html',
+        templateUrl: 'templates/aboutxt.html/#tq',
         controller: 'HomeController'
     })
     .when('/homext/#ww', {
-        templateUrl: 'templates/homext.html',
+        templateUrl: 'templates/homext.html/#ww',
         controller: 'HomeController'
     })
     .when('/aboutxt/#ds', {
-        templateUrl: 'templates/aboutxt.html',
+        templateUrl: 'templates/aboutxt.html/#ds',
         controller: 'HomeController'
     })
     .when('/aboutxt/#ds', {
@@ -44,11 +40,11 @@ angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
         controller: 'HomeController'
     })
     .when('/homext/#up', {
-        templateUrl: 'templates/homext.html',
+        templateUrl: 'templates/homext.html/#up',
         controller: 'HomeController'
     })
     .when('/homext/#br', {
-        templateUrl: 'templates/homext.html',
+        templateUrl: 'templates/homext.html/#br',
         controller: 'HomeController'
     })
     .when('/homext', {

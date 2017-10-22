@@ -23,12 +23,32 @@ angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/aboutxt.html',
         controller: 'HomeController'
     })
-    .when('/aboutxt/#ca', {
-        templateUrl: 'templates/aboutxt.html',
+    .when('/homext/#cs', {
+        templateUrl: 'templates/homext.html',
         controller: 'HomeController'
     })
     .when('/aboutxt/#tq', {
         templateUrl: 'templates/aboutxt.html',
+        controller: 'HomeController'
+    })
+    .when('/homext/#ww', {
+        templateUrl: 'templates/homext.html',
+        controller: 'HomeController'
+    })
+    .when('/aboutxt/#ds', {
+        templateUrl: 'templates/aboutxt.html',
+        controller: 'HomeController'
+    })
+    .when('/aboutxt/#ds', {
+        templateUrl: 'templates/aboutxt.html',
+        controller: 'HomeController'
+    })
+    .when('/homext/#up', {
+        templateUrl: 'templates/homext.html',
+        controller: 'HomeController'
+    })
+    .when('/homext/#br', {
+        templateUrl: 'templates/homext.html',
         controller: 'HomeController'
     })
     .when('/homext', {

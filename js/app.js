@@ -19,6 +19,14 @@ angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
         templateUrl: 'templates/faq.html',
         controller: 'HomeController'
     })
+    .when('/aboutxt', {
+        templateUrl: 'templates/aboutxt.html',
+        controller: 'HomeController'
+    })
+    .when('/homext', {
+        templateUrl: 'templates/homext.html',
+        controller: 'HomeController'
+    })
     .when('/fees', {
         templateUrl: 'templates/fees.html',
         controller: 'HomeController'

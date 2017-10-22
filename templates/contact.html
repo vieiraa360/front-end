@@ -52,22 +52,22 @@
 
       <div class="form-group">
       <input type="email" name="email" class="form-control" ng-model="email.text" required placeholder="Email">
-      <p ng-show="contactForm.email.$pristine" class="help-block">Your email is required</p>
+      <p ng-show="contactForm.email.$pristine" class="help-block"></p>
       </div>
 
       <div class="form-group">
       <input type="text" name="name" class="form-control" ng-model="name" required id="InputText" placeholder="Name">
-      <p ng-show="contactForm.name.$pristine" class="help-block">Your name is required</p>
+      <p ng-show="contactForm.name.$pristine" class="help-block"></p>
       </div>
 
       <div class="form-group">
       <input type="subject" name="subject" class="form-control" ng-model="subject" required id="InputText" placeholder="Enter your subject">
-      <p ng-show="contactForm.subject.$pristine" class="help-block">Please enter the subject of your message</p>
+      <p ng-show="contactForm.subject.$pristine" class="help-block"></p>
       </div>
 
       <div class="form-group">
       <textarea type="textarea" class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
-      <p ng-show="contactForm.textarea.$pristine" class="help-block">Please type in your message</p>
+      <p ng-show="contactForm.textarea.$pristine" class="help-block"></p>
       </div>
 
       <button type="submit" class="btn btn-primary btn-large" ng-disabled="contactForm.$invalid" data-toggle="modal" data-target="#mailSent">Submit</button>

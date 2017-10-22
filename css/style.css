@@ -70,6 +70,31 @@ body {
   padding-top: 5px;
 }
 
+
+#card1 {
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#card2 {
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#card3 {
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#card4 {
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  text-align: left;
+}
+
 #card7 {
   border: 5px solid #FFF;
   border-radius: 15px;
@@ -106,3 +131,7 @@ footer img {
 #footertext {
   text-align: right;
 } 
+
+#backButton {
+  margin-left: -110px;
+}

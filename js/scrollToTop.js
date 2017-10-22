@@ -46,4 +46,3 @@ angular.module('scrollToTop',[])
     transclude: true
     }
 );
-

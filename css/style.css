@@ -3,11 +3,12 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 992px) {
-    body {
-        padding-top: 56px;
-    }
+@media (max-width: 576px) {
+    #card7 img {
+    width: 50%;
+  }
 }
+
 
 .navbar {
   position: absolute;
@@ -27,7 +28,8 @@ body {
 
 .business-header {
     height: 50vh;
-    min-height: 300px;
+    min-height: 200px;
+    padding-top: 30px;
     background: url('../images/banner.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,19 +37,19 @@ body {
     -o-background-size: cover;
 }
 
-.card {
-    height: 100%;
-}
-
-
 .landing {
     border: 0px;
     text-align: center;
     background-color: transparent;
 }
 
+
 .landing card-footer {
     display: none;
+}
+
+.landing h2 {
+  text-align: center;
 }
 
 #logo {
@@ -69,12 +71,58 @@ body {
   padding-top: 5px;
 }
 
+
+.quote {
+  margin-top: 15px;
+  background-color: #A2A2A8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.quoteButton {
+  background-color: #BDBEC4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+blockquote {
+  margin: 0;
+}
+
+#contactButton {
+  margin-top: 60px;
+}
+
+
+.card {
+    height: 100%;
+    background-color: White;
+}
+
+.card:hover {
+  background-color: #E6E7EC;
+}
+
+
+#card6 {
+  padding: 30px;
+  margin-left: 30px;
+}
+
 #card7 {
-  border: 5px solid #FFF;
+  border: 0.5px solid
   border-radius: 15px;
-  line-height: 1.5em;
-  font-size: 1em;
   text-align: left;
+  padding: 20px;
+  margin-left: 30px;
 }
 #card7 li {
   list-style: none;
@@ -83,7 +131,16 @@ body {
 #card7 img {
     height: 100px !important;
     border-radius: 15px;
+    margin-left: 80px;
 }
+
+#card7 h4 {
+  text-align: left;
+  font-family: sans-serif;
+  color: #29335C;
+}
+
+
 #accordion {
     padding-bottom: 200px;
     padding-top: 50px;
@@ -94,8 +151,19 @@ body {
 #title {
     text-align: center;
     color: white;
-    margin-top: -70px;
+    margin-top: -90px;
 }
+
+
 footer img {
-  height: 77px !important;
+  height: 50px !important;
+}
+
+#footertext {
+  text-align: right;
+} 
+
+#icons {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

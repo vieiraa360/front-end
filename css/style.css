@@ -74,7 +74,7 @@ body {
 
 .quote {
   margin-top: 15px;
-  background-color: #A2A2A8;
+  background-color: rgba(66,139,202,0.8);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #fff;
@@ -83,7 +83,7 @@ body {
 }
 
 .quoteButton {
-  background-color: #BDBEC4;
+  background-color: rgba(109,109,109,0.8);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   color: #fff;
@@ -167,3 +167,4 @@ footer img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+

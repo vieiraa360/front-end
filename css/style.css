@@ -3,11 +3,52 @@ body {
     overflow-x: hidden;
 }
 
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    #card7 img {
+    width: 50%;
+  }
+}
+
+
+// Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) {
+  .collapse {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+}
+
+
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     body {
         padding-top: 56px;
     }
 }
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
 
 .navbar {
   position: absolute;
@@ -38,8 +79,12 @@ body {
 
 .card {
     height: 100%;
+    background-color: White;
 }
 
+.card:hover {
+  background-color: #E6E7EC;
+}
 
 .landing {
     border: 0px;
@@ -47,8 +92,13 @@ body {
     background-color: transparent;
 }
 
+
 .landing card-footer {
     display: none;
+}
+
+.landing h2 {
+  text-align: center;
 }
 
 #logo {
@@ -70,6 +120,35 @@ body {
   padding-top: 5px;
 }
 
+
+.quote {
+  margin-top: 15px;
+  background-color: #A2A2A8;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.quoteButton {
+  background-color: #BDBEC4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+blockquote {
+  margin: 0;
+}
+
+#contactButton {
+  margin-top: 60px;
+}
 
 #card1 {
   border: 0.5px solid rgba(0,0,0,0.2);
@@ -95,12 +174,17 @@ body {
   text-align: left;
 }
 
+#card6 {
+  padding: 30px;
+}
+
 #card7 {
   border: 5px solid #FFF;
   border-radius: 15px;
   line-height: 1.5em;
   font-size: 1em;
   text-align: left;
+  padding: 20px;
 }
 #card7 li {
   list-style: none;
@@ -109,7 +193,13 @@ body {
 #card7 img {
     height: 100px !important;
     border-radius: 15px;
+    margin-left: 80px;
 }
+
+#card7 h4 {
+  text-align: center;
+}
+
 #accordion {
     padding-bottom: 200px;
     padding-top: 50px;
@@ -132,6 +222,8 @@ footer img {
   text-align: right;
 } 
 
-#backButton {
-  margin-left: -110px;
+#icons {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+

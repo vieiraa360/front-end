@@ -23,57 +23,58 @@
 
     <!-- Page content -->
 
-    <div id="card7" class="row no-gutters">
-        <div class="col-6 col-md-4">
-          <div class="card">
-            <h4>Send me an email, whatever you're feeling:</h4>
-              <ul class="animated slideInUp">
-                <li>Depressed?</li>
-                  <img src="./images/depressed.jpg">
-              </ul>
-              
-              <ul class="animated slideInUp">
-                <li>Sad?</li>
-                  <img src="./images/sad.jpg">
-              </ul>
+  <div id="card7" class="row">
+    <div class="card">
+        <div class="col-xs-12 col-sm-auto col-lg-auto">
+                <h4>Send me a message, whatever you're feeling.</h4>
+                  <ul class="animated slideInUp">
+                    <li>Depressed?</li>
+                      <img src="./images/depressed.jpg">
+                  </ul>
+                  
+                  <ul class="animated slideInUp">
+                    <li>Sad?</li>
+                      <img src="./images/sad.jpg">
+                  </ul>
 
-              <ul class="animated slideInUp">
-                <li>Unsure?</li>
-                <img src="./images/unsure.jpg">
-              </ul>
+                  <ul class="animated slideInUp">
+                    <li>Unsure?</li>
+                    <img src="./images/unsure.jpg">
+                  </ul>
+            </div>
+        </div>
+
+          
+     
+        <div class="col-xs-12 col-md-6 col-xl-8 animated slideInUp">
+          <div class="card" id="card6">
+            <form name="contactForm" data-ng-submit="submitForm()" method="POST" novalidate">
+              <label for="form name"><h2><span style="color: #29335C">Contact Me</span></h2></label>
+
+              <div class="form-group">
+              <input type="email" name="email" class="form-control" ng-model="email.text" required placeholder="Email">
+              <p ng-show="contactForm.email.$pristine" class="help-block"></p>
+              </div>
+
+              <div class="form-group">
+              <input type="text" name="name" class="form-control" ng-model="name" required id="InputText" placeholder="Name">
+              <p ng-show="contactForm.name.$pristine" class="help-block"></p>
+              </div>
+
+              <div class="form-group">
+              <input type="subject" name="subject" class="form-control" ng-model="subject" required id="InputText" placeholder="Enter your subject">
+              <p ng-show="contactForm.subject.$pristine" class="help-block"></p>
+              </div>
+
+              <div class="form-group">
+              <textarea type="textarea" class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
+              <p ng-show="contactForm.textarea.$pristine" class="help-block"></p>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large" ng-disabled="contactForm.$invalid" data-toggle="modal" data-target="#mailSent">Submit</button>
+            </form>
+          </div>
         </div>
       </div>
-
-<div class="card">
-  <div id="card6" class="col-12 col-md-8 animated slideInUp">
-    <form name="contactForm" data-ng-submit="submitForm()" method="POST" novalidate">
-      <label for="form name"><h2><span style="color: #29335C">Contact Me</span></h2></label>
-
-      <div class="form-group">
-      <input type="email" name="email" class="form-control" ng-model="email.text" required placeholder="Email">
-      <p ng-show="contactForm.email.$pristine" class="help-block"></p>
-      </div>
-
-      <div class="form-group">
-      <input type="text" name="name" class="form-control" ng-model="name" required id="InputText" placeholder="Name">
-      <p ng-show="contactForm.name.$pristine" class="help-block"></p>
-      </div>
-
-      <div class="form-group">
-      <input type="subject" name="subject" class="form-control" ng-model="subject" required id="InputText" placeholder="Enter your subject">
-      <p ng-show="contactForm.subject.$pristine" class="help-block"></p>
-      </div>
-
-      <div class="form-group">
-      <textarea type="textarea" class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
-      <p ng-show="contactForm.textarea.$pristine" class="help-block"></p>
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-large" ng-disabled="contactForm.$invalid" data-toggle="modal" data-target="#mailSent">Submit</button>
-    </form>
-  </div>
-</div>
-
-    <div id="card7" class="col-md-12">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.895382919942!2d-1.9597878329906993!3d50.723820805372114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a6ca62277aef%3A0x6e12e9d8bf43e69d!2sJames+Steven+Practice!5e0!3m2!1sen!2suk!4v1507843013784" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+      
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.895382919942!2d-1.9597878329906993!3d50.723820805372114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873a6ca62277aef%3A0x6e12e9d8bf43e69d!2sJames+Steven+Practice!5e0!3m2!1sen!2suk!4v1507843013784" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>

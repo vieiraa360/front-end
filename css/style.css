@@ -3,7 +3,13 @@ body {
     overflow-x: hidden;
 }
 
+@media (max-width: 576px) {
+    #card7 img {
+    width: 50%;
+  }
+}
 
+/*
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     #card7 img {
@@ -18,12 +24,12 @@ body {
     display: flex !important;
   }
 }
-
+/*
 @media (min-width: 700px) and (max-width: 1000px) {
 
 }
-
-
+*/
+/*
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     body {
@@ -31,13 +37,13 @@ body {
     }
 }
 
-
+/*
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
 }
-
-
+*/
+/*
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -48,7 +54,7 @@ body {
     padding-left: 0;
   }
 }
-
+*/
 
 .navbar {
   position: absolute;
@@ -75,15 +81,6 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
-
-.card {
-    height: 100%;
-    background-color: White;
-}
-
-.card:hover {
-  background-color: #E6E7EC;
 }
 
 .landing {
@@ -150,41 +147,28 @@ blockquote {
   margin-top: 60px;
 }
 
-#card1 {
-  border: 0.5px solid rgba(0,0,0,0.2);
-  border-radius: 5px;
-  text-align: left;
+
+.card {
+    height: 100%;
+    background-color: White;
 }
 
-#card2 {
-  border: 0.5px solid rgba(0,0,0,0.2);
-  border-radius: 5px;
-  text-align: left;
+.card:hover {
+  background-color: #E6E7EC;
 }
 
-#card3 {
-  border: 0.5px solid rgba(0,0,0,0.2);
-  border-radius: 5px;
-  text-align: left;
-}
-
-#card4 {
-  border: 0.5px solid rgba(0,0,0,0.2);
-  border-radius: 5px;
-  text-align: left;
-}
 
 #card6 {
   padding: 30px;
+  margin-left: 30px;
 }
 
 #card7 {
-  border: 5px solid #FFF;
+  border: 0.5px solid
   border-radius: 15px;
-  line-height: 1.5em;
-  font-size: 1em;
   text-align: left;
   padding: 20px;
+  margin-left: 30px;
 }
 #card7 li {
   list-style: none;
@@ -197,8 +181,11 @@ blockquote {
 }
 
 #card7 h4 {
-  text-align: center;
+  text-align: left;
+  font-family: sans-serif;
+  color: #29335C;
 }
+
 
 #accordion {
     padding-bottom: 200px;

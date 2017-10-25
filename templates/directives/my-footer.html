@@ -1,31 +1,59 @@
-     <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Counselling & Psychotherapy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto nav pull-right">
+            <li class="nav-item" ng-class="{active:isActive('/')}">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item" name="About" ng-class="{active:isActive('/about')}">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item" name="FAQs" ng-class="{active:isActive('/faq')}">
+              <a class="nav-link" href="/faq">FAQs</a>
+            </li>
+            <li class="nav-item" name="Contact" ng-class="{active:isActive('/contact')}">
+              <a class="nav-link" href="/contact">Contact</a>
 
-      <div class="row">
-            <div class="col-md-3">
-              <center>
-                <a href="http://www.counselling-directory.org.uk/" target="_blank"><img src="./images/counsellingDirectory.png" alt="Counselling Directory"></a>
-              </center>
-            </div>
-            <div class="col-md-3">
-              <center>
-                <a href="https://drive.google.com/file/d/0B87Lzbde2BEJZUZLcXRoSk5HaVU/view?usp=sharing/" target="_blank"><img src="./images/logo2.PNG" target="_blank" alt="BACP"></a>
-              </center>
-            </div>
-            <div class="col-md-3">
-              <center>
-                <a href="https://www.linkedin.com/in/elsa-artur-0694a399/" target="_blank"><img src="./images/linkedin_606x606.png" target="_blank" alt="LinkdIn"></a>
-              </center>
-            </div>
-            <div class="col-md-3" id="footertext">
-              <center>
-                <a href="tel:07766671971">Tel: 07766671971 </a><br>
-               <a href="mailto:elsaartur@live.co.uk"> Email: elsaartur@live.co.uk</a>
-              </center>
-            </div>
+            </li>
+            <li class="nav-item" name="Fees" ng-class="{active:isActive('#fees')}">
+              <a class="nav-link" href="" data-toggle="modal" data-target="#fees">Fees</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
+
+
+<section>
+<!-- Fees Modal -->
+  <div class="modal fade" id="fees" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="ModalLongTitle"> My Fees</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4><strong>Counselling session</strong> - £45 for 60 minutes<br>
+          <strong>Supervision</strong> - £60 for 90 minutes<br>
+          <strong>Counselling for students</strong> - £35 for 60 minutes</h4>
+  <h4>I’m able to offer a free consultation of up to 15 minutes by phone for you to see if working together is an option.</h4>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-    <!-- /.container -->
-  </footer>
+  </div>
+</section>

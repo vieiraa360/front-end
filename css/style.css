@@ -38,6 +38,10 @@ body {
     -o-background-size: cover;
 }
 
+#headlogo {
+  display: inline;
+}
+
 .landing {
     border: 0px;
     text-align: center;

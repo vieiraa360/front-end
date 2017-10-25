@@ -9,14 +9,15 @@ body {
   }
 }
 
-
 .navbar {
   position: absolute;
   border-radius: 0px;
 }
+
 .nav > li > a:hover {
   background-color: transparent;
 }
+
 .nav > li > a:focus {
   background-color: transparent;
 }
@@ -43,7 +44,6 @@ body {
     background-color: transparent;
 }
 
-
 .landing card-footer {
     display: none;
 }
@@ -60,7 +60,6 @@ body {
   margin-right: 45px;
 }
 
-
 #bio {
   width: 150px !important;
   display: inline-block;
@@ -71,7 +70,6 @@ body {
   padding-top: 5px;
 }
 
-
 .quote {
   margin-top: 15px;
   background-color: rgba(66,139,202,0.8);
@@ -80,6 +78,10 @@ body {
   color: #fff;
   padding: 20px;
   font-size: 20px;
+}
+
+.quote:hover {
+  background-color: rgba(66,139,202,1);
 }
 
 .quoteButton {
@@ -92,7 +94,6 @@ body {
   text-align: center;
 }
 
-
 blockquote {
   margin: 0;
 }
@@ -100,7 +101,6 @@ blockquote {
 #contactButton {
   margin-top: 60px;
 }
-
 
 .card {
     height: 100%;
@@ -110,7 +110,6 @@ blockquote {
 .card:hover {
   background-color: #E6E7EC;
 }
-
 
 #card6 {
   padding: 30px;
@@ -131,7 +130,7 @@ blockquote {
 #card7 img {
     height: 100px !important;
     border-radius: 15px;
-    margin-left: 80px;
+    margin-left: 60px;
 }
 
 #card7 h4 {
@@ -139,7 +138,6 @@ blockquote {
   font-family: sans-serif;
   color: #29335C;
 }
-
 
 #accordion {
     padding-bottom: 200px;
@@ -154,6 +152,25 @@ blockquote {
     margin-top: -90px;
 }
 
+.grow {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.grow:hover {
+  -webkit-transform:scale(1.03);
+  -moz-transform:scale(1.03);
+  -ms-transform:scale(1.03);
+  -o-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
+.card-img-top img:hover {
+  opacity:1;
+}
 
 footer img {
   height: 50px !important;
@@ -167,4 +184,3 @@ footer img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-

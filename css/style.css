@@ -9,6 +9,20 @@ body {
   }
 }
 
+@media (max-width: 840px) {
+
+  .container{
+        padding: 0;
+        overflow-x: hidden;
+    }
+        h2 {
+          font-size: 90%;
+        }
+        blockquote {
+          font-size: 60%;
+    }
+}
+
 .navbar {
   position: absolute;
   border-radius: 0px;

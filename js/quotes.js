@@ -3,32 +3,32 @@ function quote_name() {
 
 var quote=new Array()
 quote[0] = "The main objective of psychological therapy is not to transport the patient to an impossible state of happiness, but rather to help him acquire firmness and patience in the face of suffering. Life happens in a balance between joy and pain.";
-quote[1] = "It is a miracle that curiosity survives formal education.";
-quote[2] = "If you judge people, you have no time to love them."
-quote[3] = "It's not how much we give, but how much love we put into giving.";
-quote[4] = "Before you embark on a journey of revenge, dig two graves.";
-quote[5] = "Everything has its beauty but not everyone sees it.";
-quote[6] = "I hear and I forget. I see and I remember. I do and I understand.";
-quote[7] = "Our greatest glory is not in never falling, but in getting up every time we do.";
-quote[8] = "Respect yourself and others will respect you.";
-quote[9] = "When we see men of a contrary character, we should turn inwards and examine ourselves.";
-quote[10] = "When we see men of a contrary character, we should turn inwards and examine ourselves.";
-quote[11] = "The happiness of a man in this life does not consist in the absence but in the mastery of his passions.";
+quote[1] = "In Hollywood if you don't have a shrink, people think you're crazy.";
+quote[2] = "In my early professional years I was asking the question: How can I treat, or cure, or change this person? Now I would phrase the question in this way: How can I provide a relationship which this person may use for his own personal growth?"
+quote[3] = "Therapy isn't Radio.We don't need to constantly fill the air with sounds. Sometimes, when its quite, surprising things happen.";
+quote[4] = "Feelings are not to be suppressed or fixed — they’re to be acknowledged.";
+quote[5] = "I've always regarded therapy more as a calling than a profession, a way of life for people who care about others.";
+quote[6] = "Complexity is a product of unawareness and simplicity a result of awareness! Uncomplex yourself, Live Life!";
+quote[7] = "In one sense, all causes of a problem are 'current', although many of them represent the residue of earlier learning or unprocessed memories.";
+quote[8] = "Psychotherapy is an art enlightened by wisdom, theory and research.";
+quote[9] = "Psychotherapy isn't a twentieth-century artifice imposed on nature, but the reinstatement of a natural healing process.";
+quote[10] = "In therapy the individual learns to recognize and express his feelings as his own feelings, not as a fact about another person.";
+quote[11] = "Allow yourself to be an anchor and anchored by others.";
 
 
 var name=new Array()
 name[0] = "Carl Jung";
-name[1] = "Albert Einstain";
-name[2] = "Madre Teresa";
-name[3] = "Madre Teresa";
-name[4] = "Confucio";
-name[5] = "Confucio";
-name[6] = "Confucio";
-name[7] = "Confucio";
-name[8] = "Confucio";
-name[9] = "Confucio";
-name[10] = "Confucio";
-name[11] = "Alfred Lord Tennyson";
+name[1] = "Johnny Carson";
+name[2] = "Carl R. Rogers";
+name[3] = "Mary Pipher";
+name[4] = "Jennifer Lane";
+name[5] = "Irvin D. Yalom";
+name[6] = "Ramana Pemmaraju";
+name[7] = "Richard S. Hallam";
+name[8] = "Barbara Temaner Brodley";
+name[9] = "Patricia Love";
+name[10] = "Carl R. Rogers";
+name[11] = "Asa Don Brown";
 
 
 index = Math.floor(Math.random() * quote.length);

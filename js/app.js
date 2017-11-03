@@ -1,4 +1,4 @@
-angular.module('ElsaArtur', ['ngRoute', 'btford.modal', 'NavbarDirective', 'ModalDirective', 'ui.bootstrap.modal', 'ui.bootstrap', 'angAccordion', 'scrollToTop', 'FooterDirective', 'RouteControllers']);
+angular.module('ElsaArtur', ['ngRoute', 'NavbarDirective', 'ModalDirective', 'ui.bootstrap.modal', 'ui.bootstrap', 'angAccordion', 'scrollToTop', 'FooterDirective', 'RouteControllers']);
 
 angular.module('ElsaArtur').config(function($locationProvider, $routeProvider) {
     $locationProvider.html5Mode(true);

@@ -20,14 +20,17 @@ body {
     padding-right: 10px;
     overflow-x: hidden;
   }
-  h2 {
-    font-size: 90%;
+  .display-3 {
+    font-size: 3em;
   }
   blockquote {
     font-size: 60%;
   }
   .navbar-brand {
     font-size: 0.8em;
+  }
+  h2 {
+    font-size: 1em;
   }
 }
 
@@ -79,6 +82,9 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+.bussiness-header h1 {
+  font-size: 1em;
 }
 
 #headlogo {

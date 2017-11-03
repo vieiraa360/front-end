@@ -1,0 +1,260 @@
+body {
+    padding-top: 54px;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  #card7 img {
+    width: 50%;
+  }
+  .navbar-brand {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 840px) {
+
+  .container{
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+  }
+  h2 {
+    font-size: 90%;
+  }
+  blockquote {
+    font-size: 60%;
+  }
+  .navbar-brand {
+    font-size: 0.8em;
+  }
+}
+
+/* ------Nav hamburger menu expanded ----- */
+.collapse.in {        
+  display: block;       
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.nav > li > a:hover {
+  background-color: transparent;
+}
+
+.nav > li > a:focus {
+  background-color: transparent;
+}
+
+.navbar ul {
+  width: 100%;
+  float: right;
+  text-decoration: none;
+  text-align: right;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #C3C8CD;
+}
+
+.navbar a:hover {
+    color:#F9F9F9; 
+     text-decoration:none; 
+     cursor:pointer;
+}
+
+.navbar-header {
+  float:left;
+}
+
+.business-header {
+  height: 50vh;
+  min-height: 200px;
+  padding-top: 30px;
+  background: url('../images/banner.jpg') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#headlogo {
+  float: left;
+}
+
+.landing {
+  border: 0px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.landing card-footer {
+  display: none;
+}
+
+.landing h2 {
+  text-align: center;
+}
+
+#logo {
+  width: 150px !important;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-right: 45px;
+}
+
+#bio {
+  width: 150px !important;
+  display: inline-block;
+  padding-bottom: 100px;
+  padding-top: 33px;
+  border-radius: 50%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.quote {
+  margin-top: 15px;
+  background-color: rgba(66,139,202,0.8);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.quote:hover {
+  background-color: rgba(66,139,202,1);
+}
+
+.quoteButton {
+  background-color: rgba(109,109,109,0.8);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+blockquote {
+  margin: 0;
+}
+
+#contactButton {
+  margin-top: 60px;
+}
+
+.card {
+  height: 100%;
+  background-color: White;
+}
+
+.card:hover {
+  background-color: #E6E7EC;
+}
+
+#card6 {
+  padding: 10px;
+  border: 0.5px solid
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#card7 {
+  border: 0.5px solid
+  text-align: left;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+#card7 li {
+  list-style: none;
+}
+
+#card7 img {
+  height: 100px !important;
+  border-radius: 15px;
+  margin-left: 60px;
+}
+
+#card7 h4 {
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #29335C;
+}
+
+#accordion {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+#accordion a:hover {
+  text-decoration: none;
+}
+#accordion p {
+  font-size: 0.9em;
+}
+
+/* --- Modal fix ---  */
+.fade.in {
+  opacity: 1;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  font-size: 1em;
+  color: #5D5353;
+}
+.modal.in .modal-dialog ul {
+  list-style-type: none;
+}
+.modal-backdrop.in {
+  opacity: 0.5;
+}
+ /* --- Modal fix --- end */
+
+#title {
+  text-align: center;
+  color: #5D5353;
+  margin-top: 20px;
+}
+
+.grow {
+  -webkit-transition:all 0.5s ease-out;
+  -moz-transition:all 0.5s ease-out;
+  -ms-transition:all 0.5s ease-out;
+  -o-transition:all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+.grow:hover {
+  -webkit-transform:scale(1.03);
+  -moz-transform:scale(1.03);
+  -ms-transform:scale(1.03);
+  -o-transform:scale(1.03);
+  transform:scale(1.03);
+}
+
+.card-img-top img:hover {
+  opacity:1;
+}
+
+footer img {
+  height: 50px !important;
+}
+
+#footertext {
+  text-align: right;
+} 
+
+#icons {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

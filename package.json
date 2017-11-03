@@ -1,0 +1,22 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vieiraa360/front-end.git"
+  },
+  "author": "Helder Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vieiraa360/front-end/issues"
+  },
+  "homepage": "https://github.com/vieiraa360/front-end#readme",
+  "dependencies": {
+    "angular-scroll-to-top": "^1.0.1"
+  }
+}

@@ -1,0 +1,68 @@
+<div ng-controller="ModalCtrl">
+    <script type="text/ng-template" id="templates/myFees.html">
+        <div class="modal-header">
+            <h3 class="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a ng-click="selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button class="btn btn-default" ng-click="open()">Open me!</button>
+    <button class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+</div>
+
+
+<!--
+<div ng-controller="ModalCtrl" class="modal">
+    <script type="text/ng-template" id="myFees">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">My Fees!</h3>
+        </div>
+          <h4><strong>Counselling session</strong> - £45 for 60 minutes<br>
+          <strong>Supervision</strong> - £60 for 90 minutes<br>
+          <strong>Counselling for students</strong> - £35 for 60 minutes</h4>
+          <h4>I’m able to offer a free consultation of up to 15 minutes by phone for you to see if working together is an option.</h4>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+</div>
+
+<!--
+  <div class="modal fade" id="fees" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="ModalLongTitle"> My Fees</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4><strong>Counselling session</strong> - £45 for 60 minutes<br>
+          <strong>Supervision</strong> - £60 for 90 minutes<br>
+          <strong>Counselling for students</strong> - £35 for 60 minutes</h4>
+  <h4>I’m able to offer a free consultation of up to 15 minutes by phone for you to see if working together is an option.</h4>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->

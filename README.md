@@ -5,7 +5,7 @@
  
 ### What is this site for?
  
-This is a website for people to find Counselling. It helps users to search through and find appropriate therapies.
+This is a website for people to find Counselling and/or Counselling supervision. It helps users to search through and find appropriate therapies and help them make the desision either to go for therapy or not.
  
 ### What does it do?
  
@@ -14,12 +14,12 @@ This site will allow users to browse through and read about Elsa's counselling a
 
 ### How does it work
  
-This site uses AngularJS. The site is styled with Bootstrap.
+This site uses AngularJS and is styled with Bootstrap.
  
 
 ## Features
 
-### Some features include, browsing for information and email to contact Elsa and book the sessions.
+### Some features include, browsing for information and email to contact Elsa and book therapy sessions.
  
 
 ## Tech Used
@@ -38,8 +38,8 @@ This site uses AngularJS. The site is styled with Bootstrap.
 ## Contributing
 
 ### Getting the code up and running
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
-2. After you've that you'll need to make sure that you have **npm** and **bower** installed
+1. Firstly you will need to clone this repository by running the ```git clone https://github.com/vieiraa360/front-end.git``` command
+2. After you've done that you'll need to make sure that you have **npm** and **bower** installed
   1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
   2. Once you've done this you'll need to run the following command:
      `npm install -g bower # this may require sudo on Mac/Linux`

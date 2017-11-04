@@ -19,7 +19,7 @@ angular.module('ModalDirective', []).directive('myModal', function() {
 	 controller: function ($scope) {
           $scope.selected = {
             item: $scope.items[0]
-   };
-}
-}
+          };
+        }
+      }
 });

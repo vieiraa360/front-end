@@ -48,26 +48,33 @@
      
         <div class="col-xs-12 col-md-6 col-xl-8 animated slideInUp">
           <div class="card" id="card6">
-            <form name="contactForm" ng-controller="FormController" data-ng-submit="submitForm()" method="POST" novalidate>
+            <form name="contactForm" ng-controller="FormController" ng-submit="contactForm.$valid &&sendForm()" method="POST" novalidate>
               <label for="contactForm"><span style="color: #29335C"><h2>Contact Me</h2></span></label>
 
               <div class="form-group">
-              <input type="email" name="email" class="form-control" ng-model="email.text" ng-pattern = '/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i' required placeholder="Email">
+              <input type="email" ng-model="email" name="email" ng-maxlength="100" class="form-control" ng-pattern='/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i' required placeholder="Email"/>
               <p ng-show="contactForm.email.$pristine" class="help-block"></p>
+               <span ng-show="contactForm.email.$dirty && contactForm.$invalid">
+                <span ng-show="contactForm.$error.required"></span>
+                <span style="color:Red" ng-show="contactForm.$error.email">This is not a valid email.</span>
+                </span>
               </div>
 
               <div class="form-group">
-              <input type="text" name="name" class="form-control" ng-model="name" ng-pattern="/^[a-zA-Z\s]*$/" required placeholder="Name">
+              <input type="text" name="name" class="form-control" ng-model="name" ng-maxlength="100" ng-pattern="/^[a-zA-Z\s]*$/" required placeholder="Name">
               <p ng-show="contactForm.name.$pristine" class="help-block"></p>
+               <span ng-show="contactForm.name.$dirty && contactForm.$invalid">
+                <span ng-show="contactForm.$error.required"></span>
+                </span>
               </div>
 
               <div class="form-group">
-              <input type="text" name="subject" class="form-control" ng-model="subject" ng-pattern="/^[a-zA-Z\s]*$/" required placeholder="Enter your subject">
+              <input type="text" name="subject" class="form-control" ng-model="subject" ng-pattern="^[A-Za-z0-9_-]+$" placeholder="Enter your subject">
               <p ng-show="contactForm.subject.$pristine" class="help-block"></p>
               </div>
 
               <div class="form-group">
-              <textarea class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
+              <textarea class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"><span></span></textarea>
               <p ng-show="contactForm.textarea.$pristine" class="help-block"></p>
               </div>
 

@@ -29,10 +29,11 @@ angular.module('RouteControllers', [])
 		    isFirstOpen: false,
 		    isFirstDisabled: false
 		  };
-})
+  })
 
-.controller('FormController', ['$scope', function($scope) {
-      $scope.email = {
-        text: ''
-      };
-}]);
+
+    .controller('FormController', function ($scope) {
+      $scope.sendForm = function () {
+        $scope.msg = "Form Validated";
+        };
+});

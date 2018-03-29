@@ -1,5 +1,6 @@
 # Elsa's counselling and supervision site
 
+[![Build Status](https://travis-ci.org/vieiraa360/front-end.svg?branch=master)](https://travis-ci.org/vieiraa360/front-end)
 
 ## Overview
  

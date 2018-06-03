@@ -70,6 +70,11 @@
               <textarea class="form-control" name="textarea" ng-model="message" rows="7" required placeholder="Type your message here!"></textarea>
               <p ng-show="contactForm.textarea.$pristine" class="help-block"></p>
               </div>
+                
+                <div>            
+                <p><a type="text" class="btn btn-outline-info" href='#' onClick="alert('please click the (No, please take me back!) button if you do not agree or click the (Yes please, Submit!) button to confirm and send the email once you typed your message!')">Can we use your email address to contact you back?</a></p>
+               <p><a button type="text" class="btn btn-outline-warning" href="https://elsaartur.com/">No, please take me back!</a></p>
+              </div>
 
               <button type="submit" id="sendmail" class="btn btn-primary btn-large" data-toggle="modal" data-target="#mailSent" ng-disabled="contactForm.$invalid">Submit</button>
             </form>

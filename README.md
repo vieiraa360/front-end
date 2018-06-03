@@ -1,6 +1,5 @@
 # Elsa's counselling and supervision site
 
-
 ## Overview
  
 ### What is this site for?
